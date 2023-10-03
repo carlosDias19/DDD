@@ -1,3 +1,4 @@
+using DDD.Domain.ContabilidadeContext;
 using DDD.Domain.PicContext;
 using DDD.Domain.SecretariaContext;
 using DDD.Domain.UserManagementContext;
@@ -18,11 +19,11 @@ namespace DDD.Infra.SQLServer
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Matricula>().HasKey(m => new { m.AlunoId, m.DisciplinaId });
+/*            //modelBuilder.Entity<Matricula>().HasKey(m => new { m.AlunoId, m.DisciplinaId });
             modelBuilder.Entity<Aluno>()
                 .HasMany(e => e.Disciplinas)
                 .WithMany(e => e.Alunos)
-                .UsingEntity<Matricula>();
+                .UsingEntity<Matricula>();*/
 
 
             modelBuilder.Entity<User>().UseTpcMappingStrategy();
@@ -32,6 +33,7 @@ namespace DDD.Infra.SQLServer
         }
 
         public DbSet<Aluno> Alunos { get; set; }
+        public DbSet<Funcionario> Funcionario { get; set; }
         public DbSet<Disciplina> Disciplinas { get; set; }
         public DbSet<Matricula> Matriculas { get; set; }
         public DbSet<User> Users { get; set; }
