@@ -34,6 +34,7 @@ namespace DDD.Infra.SQLServer
 
         public DbSet<Aluno> Alunos { get; set; }
         public DbSet<Funcionario> Funcionario { get; set; }
+        public DbSet<FolhaDePagamento> FolhaDePagamento { get; set; }
         public DbSet<Disciplina> Disciplinas { get; set; }
         public DbSet<Matricula> Matriculas { get; set; }
         public DbSet<User> Users { get; set; }
