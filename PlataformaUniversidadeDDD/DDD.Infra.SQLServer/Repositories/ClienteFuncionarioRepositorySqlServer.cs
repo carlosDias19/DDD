@@ -41,7 +41,9 @@ namespace DDD.Infra.SQLServer.Repositories
             var ClienteFuncionario = new ClienteFuncionario
             {
                 ClienteId = cliente.ClienteId,
-                FuncionarioId = funcionario.UserId
+                FuncionarioId = funcionario.UserId,
+                DataInicioRelacionamento = new DateTime(),
+                DataFinalRelacionamento = new DateTime()
             };
 
             try
