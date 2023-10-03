@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DDD.Infra.SQLServer.Migrations
 {
     /// <inheritdoc />
-    public partial class matriculaPkUnica : Migration
+    public partial class Migraçãoinicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -73,7 +73,7 @@ namespace DDD.Infra.SQLServer.Migrations
                 {
                     MatriculaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AlunoId = table.Column<int>(type: "int", nullable: false),
+                    AlunoUserId = table.Column<int>(type: "int", nullable: false),
                     DisciplinaId = table.Column<int>(type: "int", nullable: false),
                     Data = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -81,8 +81,8 @@ namespace DDD.Infra.SQLServer.Migrations
                 {
                     table.PrimaryKey("PK_Matriculas", x => x.MatriculaId);
                     table.ForeignKey(
-                        name: "FK_Matriculas_Aluno_AlunoId",
-                        column: x => x.AlunoId,
+                        name: "FK_Matriculas_Aluno_AlunoUserId",
+                        column: x => x.AlunoUserId,
                         principalTable: "Aluno",
                         principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
@@ -116,9 +116,9 @@ namespace DDD.Infra.SQLServer.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Matriculas_AlunoId",
+                name: "IX_Matriculas_AlunoUserId",
                 table: "Matriculas",
-                column: "AlunoId");
+                column: "AlunoUserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Matriculas_DisciplinaId",

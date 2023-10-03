@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L+pP1Q5FhDa0uuNyxbk4IOoDbecMRvpJS+XaGckXWq6mW72S4nDOwehPMBamo4I1p/zhJ8rXDdf8aWoMhqJxzg==",
+  "dgSpecHash": "qMBQWUXknvUPo1l9pMKEoTcgZAMvlfKlI90KuauYZPbvzc/mUwZTzrtUo0GVUTA1Xl5V7nUQRHwGeOqgJv1hoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Application.Api\\DDD.Application.Api.csproj",
+  "projectFilePath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Application.Api\\DDD.Application.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -15,7 +15,6 @@
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.10\\microsoft.entityframeworkcore.analyzers.7.0.10.nupkg.sha512",
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.10\\microsoft.entityframeworkcore.design.7.0.10.nupkg.sha512",
-    "C:\\Users\\ti.estagiario\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.10\\microsoft.entityframeworkcore.inmemory.7.0.10.nupkg.sha512",
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.10\\microsoft.entityframeworkcore.relational.7.0.10.nupkg.sha512",
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.10\\microsoft.entityframeworkcore.sqlserver.7.0.10.nupkg.sha512",
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

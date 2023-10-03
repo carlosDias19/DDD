@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wT/x3uHW6TcODs/YEGJ1eT2L8ZIeLveKrhZbxSMBVFNrklcxCGvcwhmBDdYYlHUXXa5TrNdZaW65ZHcdaBcgPQ==",
+  "dgSpecHash": "J4RiYQBKOS5jcUX9YVNfEOyGHpotJfcghUr7/xSBK1hVNAQ9dbB6jVtLgo7uV1C7t3qIApASN+YusQCUbsSa+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj",
+  "projectFilePath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ti.estagiario\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

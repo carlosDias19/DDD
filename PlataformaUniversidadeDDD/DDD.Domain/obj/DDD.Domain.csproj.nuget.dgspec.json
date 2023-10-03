@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {}
+    "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
+    "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
         "projectName": "DDD.Domain",
-        "projectPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
+        "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
         "packagesPath": "C:\\Users\\ti.estagiario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ti.estagiario\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -209,22 +209,6 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.InMemory/7.0.10": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.10"
-        },
-        "compile": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/7.0.10": {
         "type": "package",
         "dependencies": {
@@ -1257,21 +1241,6 @@
           "bin/placeholder/DDD.Domain.dll": {}
         }
       },
-      "DDD.Infra.MemoryDb/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "DDD.Domain": "1.0.0",
-          "DDD.Infra.SQLServer": "1.0.0",
-          "Microsoft.EntityFrameworkCore.InMemory": "7.0.10"
-        },
-        "compile": {
-          "bin/placeholder/DDD.Infra.MemoryDb.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DDD.Infra.MemoryDb.dll": {}
-        }
-      },
       "DDD.Infra.SQLServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1571,20 +1540,6 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
         "microsoft.entityframeworkcore.design.7.0.10.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
-      ]
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/7.0.10": {
-      "sha512": "WeUjWx80ZVQVXkHuEIO4kOCKUHo6C4RdB1bJZLSngLWqwrQrMTCZE90IGBz0330GXmXKbL4LyJO/rXO/w7cRNA==",
-      "type": "package",
-      "path": "microsoft.entityframeworkcore.inmemory/7.0.10",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
-        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
-        "microsoft.entityframeworkcore.inmemory.7.0.10.nupkg.sha512",
-        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/7.0.10": {
@@ -3750,11 +3705,6 @@
       "path": "../DDD.Domain/DDD.Domain.csproj",
       "msbuildProject": "../DDD.Domain/DDD.Domain.csproj"
     },
-    "DDD.Infra.MemoryDb/1.0.0": {
-      "type": "project",
-      "path": "../DDD.Infra.MemoryDb/DDD.Infra.MemoryDb.csproj",
-      "msbuildProject": "../DDD.Infra.MemoryDb/DDD.Infra.MemoryDb.csproj"
-    },
     "DDD.Infra.SQLServer/1.0.0": {
       "type": "project",
       "path": "../DDD.Infra.SQLServer/DDD.Infra.SQLServer.csproj",
@@ -3763,7 +3713,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DDD.Infra.MemoryDb >= 1.0.0",
       "DDD.Infra.SQLServer >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -3775,11 +3724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Application.Api\\DDD.Application.Api.csproj",
+      "projectUniqueName": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Application.Api\\DDD.Application.Api.csproj",
       "projectName": "DDD.Application.Api",
-      "projectPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Application.Api\\DDD.Application.Api.csproj",
+      "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Application.Api\\DDD.Application.Api.csproj",
       "packagesPath": "C:\\Users\\ti.estagiario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Application.Api\\obj\\",
+      "outputPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Application.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ti.estagiario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3796,11 +3745,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj": {
-              "projectPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj"
-            },
-            "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {
-              "projectPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj"
+            "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {
+              "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj"
             }
           }
         }

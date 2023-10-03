@@ -3294,11 +3294,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj",
+      "projectUniqueName": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj",
       "projectName": "DDD.Infra.MemoryDb",
-      "projectPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj",
+      "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\DDD.Infra.MemoryDb.csproj",
       "packagesPath": "C:\\Users\\ti.estagiario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\obj\\",
+      "outputPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.MemoryDb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ti.estagiario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3315,11 +3315,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
-              "projectPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj"
+            "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
+              "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj"
             },
-            "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {
-              "projectPath": "C:\\Users\\ti.estagiario\\source\\repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj"
+            "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {
+              "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj"
             }
           }
         }

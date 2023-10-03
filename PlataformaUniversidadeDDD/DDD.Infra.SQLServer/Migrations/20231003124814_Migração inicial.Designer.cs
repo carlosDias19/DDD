@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DDD.Infra.SQLServer.Migrations
 {
     [DbContext(typeof(SqlContext))]
-    [Migration("20230927185039_matriculaPkUnica")]
-    partial class matriculaPkUnica
+    [Migration("20231003124814_Migração inicial")]
+    partial class Migraçãoinicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -90,7 +90,7 @@ namespace DDD.Infra.SQLServer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MatriculaId"));
 
-                    b.Property<int>("AlunoId")
+                    b.Property<int>("AlunoUserId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Data")
@@ -101,7 +101,7 @@ namespace DDD.Infra.SQLServer.Migrations
 
                     b.HasKey("MatriculaId");
 
-                    b.HasIndex("AlunoId");
+                    b.HasIndex("AlunoUserId");
 
                     b.HasIndex("DisciplinaId");
 
@@ -179,7 +179,7 @@ namespace DDD.Infra.SQLServer.Migrations
                 {
                     b.HasOne("DDD.Domain.SecretariaContext.Aluno", "Aluno")
                         .WithMany()
-                        .HasForeignKey("AlunoId")
+                        .HasForeignKey("AlunoUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
