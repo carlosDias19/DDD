@@ -33,15 +33,15 @@ namespace DDD.Infra.SQLServer.Repositories
             return _context.ClienteFuncionario.ToList();
         }
 
-        public ClienteFuncionario InsertClienteFuncionario(int ClienteId, int FuncionarioId)
+        public ClienteFuncionario InsertClienteFuncionario(int idCliente, int idFuncionario)
         {
-            var cliente = _context.Cliente .First(i => i.ClienteId == ClienteId);
-            var funcionario = _context.Funcionario.First(i => i.UserId == FuncionarioId);
+            var cliente = _context.Cliente.First(i => i.ClienteId == idCliente);
+            var funcionario = _context.Funcionario.First(i => i.UserId == idFuncionario);
 
             var ClienteFuncionario = new ClienteFuncionario
             {
-                ClienteId = cliente,
-                FuncionarioId = funcionario
+                ClienteId = cliente.ClienteId,
+                FuncionarioId = funcionario.UserId
             };
 
             try

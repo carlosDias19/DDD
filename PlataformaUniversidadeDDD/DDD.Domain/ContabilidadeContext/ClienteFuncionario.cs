@@ -10,8 +10,10 @@ namespace DDD.Domain.ContabilidadeContext
     public class ClienteFuncionario
     {
         public int ClienteFuncionarioId { get; set; }
-        public Cliente ClienteId { get; set; }
-        public Funcionario FuncionarioId { get; set; }
+        public int ClienteId { get; set; }
+        public Cliente Cliente { get; set; }
+        public int FuncionarioId { get; set; }
+        public Funcionario Funcionario { get; set; }
         public DateTime DataInicioRelacionamento { get; set; }
         public DateTime DataFinalRelacionamento { get; set; }
 

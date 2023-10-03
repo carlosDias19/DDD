@@ -26,6 +26,7 @@ namespace DDD.Infra.SQLServer
 
 
             modelBuilder.Entity<User>().UseTpcMappingStrategy();
+            modelBuilder.Entity<ClienteFuncionario>().UseTpcMappingStrategy();
             //https://learn.microsoft.com/pt-br/ef/core/modeling/inheritance
         }
 
