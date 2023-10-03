@@ -25,10 +25,8 @@ namespace DDD.Infra.SQLServer
                             .UsingEntity<Matricula>();*/
 
 
-           /* modelBuilder.Entity<User>().UseTpcMappingStrategy();
-            modelBuilder.Entity<Aluno>().ToTable("Aluno");
-            modelBuilder.Entity<Pesquisador>().ToTable("Pesquisador");
-            //https://learn.microsoft.com/pt-br/ef/core/modeling/inheritance*/
+            modelBuilder.Entity<User>().UseTpcMappingStrategy();
+            //https://learn.microsoft.com/pt-br/ef/core/modeling/inheritance
         }
 
         public DbSet<Funcionario> Funcionario { get; set; }

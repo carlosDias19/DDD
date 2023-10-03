@@ -11,8 +11,6 @@ namespace DDD.Infra.SQLServer.Interfaces
     {
         public List<ClienteFuncionario> GetClienteFuncionario();
         public ClienteFuncionario GetClienteFuncionarioById(int id);
-
-        //public void InsertMatricula(Matricula matricula);*/
         public ClienteFuncionario InsertClienteFuncionario(int ClienteId, int FuncionarioId);
         public void UpdateClienteFuncionario(ClienteFuncionario clienteFuncionario);
         public void DeleteClienteFuncionario(ClienteFuncionario clienteFuncionario);
