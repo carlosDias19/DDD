@@ -1,5 +1,4 @@
 using DDD.Domain.ContabilidadeContext;
-using DDD.Domain.SecretariaContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

@@ -1,4 +1,4 @@
-using DDD.Domain.SecretariaContext;
+using DDD.Domain.ContabilidadeContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -7,34 +7,34 @@ namespace DDD.Application.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class MatriculaController : ControllerBase
+    public class ClienteFuncionarioController : ControllerBase
     {
-        readonly IMatriculaRepository _matriculaRepository;
+        readonly IClienteFuncionarioRepository _clienteFuncionarioRepository;
 
-        public MatriculaController(IMatriculaRepository matriculaRepository)
+        public ClienteFuncionarioController(IClienteFuncionarioRepository clienteFuncionarioRepository)
         {
-            _matriculaRepository = matriculaRepository; 
+            _clienteFuncionarioRepository = clienteFuncionarioRepository; 
         }
 
         [HttpGet]
-        public ActionResult<List<Matricula>> Get()
+        public ActionResult<List<ClienteFuncionario>> Get()
         {
-            return Ok(_matriculaRepository.GetMatriculas());
+            return Ok(_clienteFuncionarioRepository.GetClienteFuncionario());
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Aluno> GetById(int id)
+        public ActionResult<ClienteFuncionario> GetById(int id)
         {
-            return Ok(_matriculaRepository.GetMatriculaById(id));
+            return Ok(_clienteFuncionarioRepository.GetClienteFuncionarioById(id));
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Matricula> CreateMatricula(int idAluno, int idDisciplina)
+        public ActionResult<ClienteFuncionario> CreateClienteFuncionario(int ClienteId, int FuncionarioId)
         {
-            Matricula matriculaIdSaved = _matriculaRepository.InsertMatricula(idAluno, idDisciplina);
-            return CreatedAtAction(nameof(GetById), new { id = matriculaIdSaved.MatriculaId }, matriculaIdSaved);
+            ClienteFuncionario ClienteFuncionarioIdSaved = _clienteFuncionarioRepository.InsertClienteFuncionario(ClienteId, FuncionarioId);
+            return CreatedAtAction(nameof(GetById), new { id = ClienteFuncionarioIdSaved.ClienteFuncionarioId }, ClienteFuncionarioIdSaved);
         }
 
         //[HttpPut]

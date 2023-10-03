@@ -1,5 +1,4 @@
-using DDD.Domain.PicContext;
-using DDD.Domain.SecretariaContext;
+
 using DDD.Domain.UserManagementContext;
 using System;
 using System.Collections.Generic;

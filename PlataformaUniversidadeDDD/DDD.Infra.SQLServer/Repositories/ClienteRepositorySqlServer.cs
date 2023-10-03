@@ -1,4 +1,4 @@
-using DDD.Domain.SecretariaContext;
+using DDD.Domain.ContabilidadeContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,21 +9,21 @@ using System.Threading.Tasks;
 
 namespace DDD.Infra.SQLServer.Repositories
 {
-    public class AlunoRepositorySqlServer : IAlunoRepository
+    public class ClienteRepositorySqlServer : IClienteRepository
     {
 
         private readonly SqlContext _context;
 
-        public AlunoRepositorySqlServer(SqlContext context)
+        public ClienteRepositorySqlServer(SqlContext context)
         {
             _context = context;
         }
 
-        public void DeleteAluno(Aluno aluno)
+        public void DeleteCliente(Cliente cliente)
         {
             try
             {
-                _context.Set<Aluno>().Remove(aluno);
+                _context.Set<Cliente>().Remove(cliente);
                 _context.SaveChanges();
             }
             catch (Exception ex)
@@ -33,23 +33,23 @@ namespace DDD.Infra.SQLServer.Repositories
             }
         }
 
-        public Aluno GetAlunoById(int id)
+        public Cliente GetClienteById(int id)
         {
-            return _context.Alunos.Find(id);
+            return _context.Cliente.Find(id);
         }
 
-        public List<Aluno> GetAlunos()
+        public List<Cliente> GetCliente()
         {
             //return  _context.Alunos.Include(x => x.Disciplinas).ToList();
-            return _context.Alunos.ToList();
+            return _context.Cliente.ToList();
 
         }
 
-        public void InsertAluno(Aluno aluno)
+        public void InsertCliente(Cliente cliente)
         {
             try
             {
-                _context.Alunos.Add(aluno);
+                _context.Cliente.Add(cliente);
                 _context.SaveChanges();
             }
             catch (Exception ex)
@@ -59,11 +59,12 @@ namespace DDD.Infra.SQLServer.Repositories
             }
         }
 
-        public void UpdateAluno(Aluno aluno)
+
+        public void UpdateCliente(Cliente cliente)
         {
             try
             {
-                _context.Entry(aluno).State = EntityState.Modified;
+                _context.Entry(cliente).State = EntityState.Modified;
                 _context.SaveChanges();
 
             }
@@ -73,5 +74,6 @@ namespace DDD.Infra.SQLServer.Repositories
                 throw ex;
             }
         }
+
     }
 }
