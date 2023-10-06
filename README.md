@@ -26,5 +26,6 @@ Certifique-se de ter o .NET SDK instalado.
 Abra o terminal ou prompt de comando e navegue até o diretório raiz do projeto.
 Execute o comando dotnet restore para restaurar os pacotes necessários.
 Execute o comando dotnet run para iniciar a aplicação.
+
 Conclusão
 Este projeto foi desenvolvido seguindo as melhores práticas do DDD, garantindo um código bem estruturado e facilmente mantido. Espera-se que esta documentação ajude os desenvolvedores a entender e trabalhar com o projeto de forma eficiente. Em caso de dúvidas adicionais, por favor, entre em contato com o time de desenvolvimento.
