@@ -34,6 +34,8 @@ namespace DDD.Application.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<Funcionario> CreateFuncionario(Funcionario funcionario)
         {
+            if (funcionario.Salario < 0)
+                return BadRequest("O Salario do funcionario nao pode ser menor que zero");
             _funcionarioRepository.InsertFuncionario(funcionario);
             return CreatedAtAction(nameof(GetById), new { id = funcionario.UserId }, funcionario);
         }
@@ -45,6 +47,8 @@ namespace DDD.Application.Api.Controllers
             {
                 if (funcionario == null)
                     return NotFound();
+                if (funcionario.Salario < 0)
+                    return BadRequest("O Salario do funcionario nao pode ser menor que zero");
 
                 _funcionarioRepository.UpdateFuncionario(funcionario);
                 return Ok("Funcionario Atualizado com sucesso!");

@@ -64,8 +64,7 @@ namespace DDD.Infra.SQLServer.Repositories
 
         public void UpdateClienteFuncionario(ClienteFuncionario clienteFuncionario)
         {
-            throw new NotImplementedException();
-            throw new NotImplementedException();
+               
         }
     }
 }

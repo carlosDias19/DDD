@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\carlo\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlo\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
       "projectName": "DDD.Domain",
-      "projectPath": "C:\\Users\\carlo\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
-      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlo\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

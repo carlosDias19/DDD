@@ -34,6 +34,10 @@ namespace DDD.Application.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<Cliente> CreateCliente(Cliente cliente)
         {
+            if (cliente == null)
+                return BadRequest("Adicionei algum cliente");
+            if (cliente.Nome == "") 
+                return BadRequest("Adicione algum nome ao cliente");
             _clienteRepository.InsertCliente(cliente);
             return CreatedAtAction(nameof(GetById), new { id = cliente.ClienteId }, cliente);
         }
@@ -44,7 +48,9 @@ namespace DDD.Application.Api.Controllers
             try
             {
                 if (cliente == null)
-                    return NotFound();
+                    return NotFound("Cliente nao foi encontrado");
+                if (cliente.Nome == "")
+                    return BadRequest("Adicione algum nome ao cliente");
 
                 _clienteRepository.UpdateCliente(cliente);
                 return Ok("Cliente Atualizado com sucesso!");

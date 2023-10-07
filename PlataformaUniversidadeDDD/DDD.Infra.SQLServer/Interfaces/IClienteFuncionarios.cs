@@ -14,5 +14,6 @@ namespace DDD.Infra.SQLServer.Interfaces
         public ClienteFuncionario InsertClienteFuncionario(int idCliente, int idFuncionario);
         public void UpdateClienteFuncionario(ClienteFuncionario clienteFuncionario);
         public void DeleteClienteFuncionario(ClienteFuncionario clienteFuncionario);
+        //asdasdas
     }
 }
