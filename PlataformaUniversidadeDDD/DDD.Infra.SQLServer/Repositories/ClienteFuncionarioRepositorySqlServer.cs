@@ -18,9 +18,25 @@ namespace DDD.Infra.SQLServer.Repositories
         }
 
 
-        public void DeleteClienteFuncionario(ClienteFuncionario clienteFuncionario)
+        public void DeleteClienteFuncionario(int idClienteFunc)
         {
-            throw new NotImplementedException();
+            try
+            {
+               var  idCli= _context.ClienteFuncionario.FirstOrDefault(x => x.ClienteFuncionarioId == idClienteFunc);
+                if ( idClienteFunc != null ) 
+                {
+                    _context.ClienteFuncionario.Remove(idCli);
+                    _context.SaveChanges();
+                }
+
+          
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
         public ClienteFuncionario GetClienteFuncionarioById(int id)

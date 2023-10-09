@@ -2,6 +2,7 @@ using DDD.Domain.ContabilidadeContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using static System.Net.WebRequestMethods;
 
 namespace DDD.Application.Api.Controllers
 {
@@ -55,25 +56,26 @@ namespace DDD.Application.Api.Controllers
         //    }
         //}
 
-        //// DELETE api/values/5
-        //[HttpDelete()]
-        //public ActionResult Delete([FromBody] Aluno aluno)
-        //{
-        //    try
-        //    {
-        //        if (aluno == null)
-        //            return NotFound();
+        /// delete api/values/5
+        [HttpDelete()]
+        public ActionResult<ClienteFuncionario> Delete(int clientefunId)
+        {
+            try
+            {
+                if (clientefunId == null)
+                    return NotFound("Cliente Usuario Nao Encontrado");
 
-        //        _alunoRepository.DeleteAluno(aluno);
-        //        return Ok("Cliente Removido com sucesso!");
-        //    }
-        //    catch (Exception ex)
-        //    {
 
-        //        throw ex;
-        //    }
+                _clienteFuncionarioRepository.DeleteClienteFuncionario(clientefunId);
+                return Ok("Cliente usuario removido com sucesso!");
+            }
+            catch (Exception ex)
+            {
 
-        //}
+                throw ex;
+            }
+
+        }
 
     }
 }
