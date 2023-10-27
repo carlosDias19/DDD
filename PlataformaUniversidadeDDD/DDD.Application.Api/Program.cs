@@ -9,10 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 //IOC - Dependency Injection
 //builder.Services.AddScoped<IAlunoRepository, AlunoRepository>();
-builder.Services.AddScoped<IFuncionarioRepository, FuncionarioRepositorySqlServer>();
-builder.Services.AddScoped<IFolhaDePagamentoRepository, FolhaDePagamentoRepositorySqlServer>();
-builder.Services.AddScoped<IClienteRepository, ClienteRepositorySqlServer>();
-builder.Services.AddScoped<IClienteFuncionarioRepository, ClienteFuncionarioRepositorySqlServer>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepositorySqlServer>();
+builder.Services.AddScoped<ITipoDeCrimeRepository, TipoDeCrimeRepositorySqlServer>();
 builder.Services.AddScoped<SqlContext, SqlContext>();
 
 builder.Services.AddControllers().AddJsonOptions(x =>

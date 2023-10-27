@@ -24,148 +24,65 @@ namespace DDD.Infra.SQLServer.Migrations
 
             modelBuilder.HasSequence("UserSequence");
 
-            modelBuilder.Entity("DDD.Domain.ContabilidadeContext.Cliente", b =>
+            modelBuilder.Entity("DDD.Domain.ReportRadarContext.TipoDeCrime", b =>
                 {
-                    b.Property<int>("ClienteId")
+                    b.Property<int>("TipoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClienteId"));
-
-                    b.Property<string>("Endereco")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ClienteId");
-
-                    b.ToTable("Cliente");
-                });
-
-            modelBuilder.Entity("DDD.Domain.ContabilidadeContext.ClienteFuncionario", b =>
-                {
-                    b.Property<int>("ClienteId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("FuncionarioId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ClienteFuncionarioId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DataFinalRelacionamento")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DataInicioRelacionamento")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("ClienteId", "FuncionarioId");
-
-                    b.HasIndex("FuncionarioId");
-
-                    b.ToTable("ClienteFuncionario");
-
-                    b.UseTpcMappingStrategy();
-                });
-
-            modelBuilder.Entity("DDD.Domain.ContabilidadeContext.FolhaDePagamento", b =>
-                {
-                    b.Property<int>("FolhaDePagamentoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FolhaDePagamentoId"));
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Valor")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("FolhaDePagamentoId");
-
-                    b.ToTable("FolhaDePagamento");
-                });
-
-            modelBuilder.Entity("DDD.Domain.UserManagementContext.User", b =>
-                {
-                    b.Property<int>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValueSql("NEXT VALUE FOR [UserSequence]");
-
-                    SqlServerPropertyBuilderExtensions.UseSequence(b.Property<int>("UserId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoId"));
 
                     b.Property<bool>("Ativo")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TipoId");
+
+                    b.ToTable("TipoDeCrime");
+                });
+
+            modelBuilder.Entity("DDD.Domain.UserManagementContext.User", b =>
+                {
+                    b.Property<int>("UsuarioId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR [UserSequence]");
+
+                    SqlServerPropertyBuilderExtensions.UseSequence(b.Property<int>("UsuarioId"));
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Login")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
+                    b.Property<string>("NomeCompleto")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Senha")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Sobrenome")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId");
+                    b.HasKey("UsuarioId");
 
                     b.ToTable((string)null);
 
                     b.UseTpcMappingStrategy();
                 });
 
-            modelBuilder.Entity("DDD.Domain.ContabilidadeContext.Funcionario", b =>
+            modelBuilder.Entity("DDD.Domain.ReportRadarContext.Usuario", b =>
                 {
                     b.HasBaseType("DDD.Domain.UserManagementContext.User");
 
-                    b.Property<string>("Cargo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DataAdmissao")
+                    b.Property<DateTime>("DataCriacao")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Salario")
+                    b.Property<int>("Nivel")
                         .HasColumnType("int");
 
-                    b.ToTable("Funcionario");
-                });
-
-            modelBuilder.Entity("DDD.Domain.ContabilidadeContext.ClienteFuncionario", b =>
-                {
-                    b.HasOne("DDD.Domain.ContabilidadeContext.Cliente", "Cliente")
-                        .WithMany()
-                        .HasForeignKey("ClienteId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("DDD.Domain.ContabilidadeContext.Funcionario", "Funcionario")
-                        .WithMany()
-                        .HasForeignKey("FuncionarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cliente");
-
-                    b.Navigation("Funcionario");
+                    b.ToTable("Usuario");
                 });
 #pragma warning restore 612, 618
         }

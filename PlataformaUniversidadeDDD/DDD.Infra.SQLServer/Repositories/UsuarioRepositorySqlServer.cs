@@ -1,4 +1,6 @@
-using DDD.Domain.ContabilidadeContext;
+
+
+using DDD.Domain.ReportRadarContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,21 +11,21 @@ using System.Threading.Tasks;
 
 namespace DDD.Infra.SQLServer.Repositories
 {
-    public class FolhaDePagamentoRepositorySqlServer : IFolhaDePagamentoRepository
+    public class UsuarioRepositorySqlServer : IUsuarioRepository
     {
 
         private readonly SqlContext _context;
 
-        public FolhaDePagamentoRepositorySqlServer(SqlContext context)
+        public UsuarioRepositorySqlServer(SqlContext context)
         {
             _context = context;
         }
 
-        public void DeleteFolhaDePagamento(FolhaDePagamento folhaDePagamento)
+        public void DeleteUsuario(Usuario usuario)
         {
             try
             {
-                _context.Set<FolhaDePagamento>().Remove(folhaDePagamento);
+                _context.Set<Usuario>().Remove(usuario);
                 _context.SaveChanges();
             }
             catch (Exception ex)
@@ -33,23 +35,23 @@ namespace DDD.Infra.SQLServer.Repositories
             }
         }
 
-        public FolhaDePagamento GetFolhaDePagamentoById(int id)
+        public Usuario GetUsuarioById(int id)
         {
-            return _context.FolhaDePagamento.Find(id);
+            return _context.Usuario.Find(id);
         }
 
-        public List<FolhaDePagamento> GetFolhaDePagamento()
+        public List<Usuario> GetUsuario()
         {
             //return  _context.Alunos.Include(x => x.Disciplinas).ToList();
-            return _context.FolhaDePagamento.ToList();
+            return _context.Usuario.ToList();
 
         }
 
-        public void InsertFolhaDePagamento(FolhaDePagamento folhaDePagamento)
+        public void InsertFuncionario(Usuario usuario)
         {
             try
             {
-                _context.FolhaDePagamento.Add(folhaDePagamento);
+                _context.Usuario.Add(usuario);
                 _context.SaveChanges();
             }
             catch (Exception ex)
@@ -60,11 +62,11 @@ namespace DDD.Infra.SQLServer.Repositories
         }
 
 
-        public void UpdateFolhaDePagamento(FolhaDePagamento folhaDePagamento)
+        public void UpdateUsuario(Usuario usuario)
         {
             try
             {
-                _context.Entry(folhaDePagamento).State = EntityState.Modified;
+                _context.Entry(usuario).State = EntityState.Modified;
                 _context.SaveChanges();
 
             }
@@ -75,5 +77,18 @@ namespace DDD.Infra.SQLServer.Repositories
             }
         }
 
+        public void InsertUsuario(Usuario usuario)
+        {
+            try
+            {
+                _context.Usuario.Add(usuario);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
     }
 }

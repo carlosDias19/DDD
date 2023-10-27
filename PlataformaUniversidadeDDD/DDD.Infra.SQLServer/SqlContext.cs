@@ -1,4 +1,5 @@
-using DDD.Domain.ContabilidadeContext;
+
+using DDD.Domain.ReportRadarContext;
 using DDD.Domain.UserManagementContext;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +18,7 @@ namespace DDD.Infra.SQLServer
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ClienteFuncionario>().HasKey(m => new { m.ClienteId, m.FuncionarioId});
+            /*modelBuilder.Entity<ClienteFuncionario>().HasKey(m => new { m.ClienteId, m.FuncionarioId});*/
             /*            //modelBuilder.Entity<Matricula>().HasKey(m => new { m.AlunoId, m.DisciplinaId });
                         modelBuilder.Entity<Aluno>()
                             .HasMany(e => e.Disciplinas)
@@ -26,14 +27,11 @@ namespace DDD.Infra.SQLServer
 
 
             modelBuilder.Entity<User>().UseTpcMappingStrategy();
-            modelBuilder.Entity<ClienteFuncionario>().UseTpcMappingStrategy();
+            /* modelBuilder.Entity<ClienteFuncionario>().UseTpcMappingStrategy();*/
             //https://learn.microsoft.com/pt-br/ef/core/modeling/inheritance
         }
 
-        public DbSet<Funcionario> Funcionario { get; set; }
-        public DbSet<FolhaDePagamento> FolhaDePagamento { get; set; }
-        public DbSet<Cliente> Cliente { get; set; }
-        public DbSet<ClienteFuncionario> ClienteFuncionario { get; set; }
-        
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<TipoDeCrime> TipoDeCrime { get; set; }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aula\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {}
+    "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\reportRadarBack\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aula\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
+    "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\reportRadarBack\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aula\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\reportRadarBack\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
         "projectName": "DDD.Domain",
-        "projectPath": "C:\\Users\\Aula\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
-        "packagesPath": "C:\\Users\\Aula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aula\\Source\\Repos\\DDD\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
+        "projectPath": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\reportRadarBack\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
+        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\reportRadarBack\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

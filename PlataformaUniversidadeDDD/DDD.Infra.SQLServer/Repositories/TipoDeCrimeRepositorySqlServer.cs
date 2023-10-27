@@ -1,4 +1,5 @@
-using DDD.Domain.ContabilidadeContext;
+
+using DDD.Domain.ReportRadarContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,21 +10,21 @@ using System.Threading.Tasks;
 
 namespace DDD.Infra.SQLServer.Repositories
 {
-    public class ClienteRepositorySqlServer : IClienteRepository
+    public class TipoDeCrimeRepositorySqlServer : ITipoDeCrimeRepository
     {
 
         private readonly SqlContext _context;
 
-        public ClienteRepositorySqlServer(SqlContext context)
+        public TipoDeCrimeRepositorySqlServer(SqlContext context)
         {
             _context = context;
         }
 
-        public void DeleteCliente(Cliente cliente)
+        public void DeleteTipoDeCrime(TipoDeCrime tipoDeCrime)
         {
             try
             {
-                _context.Set<Cliente>().Remove(cliente);
+                _context.Set<TipoDeCrime>().Remove(tipoDeCrime);
                 _context.SaveChanges();
             }
             catch (Exception ex)
@@ -33,38 +34,38 @@ namespace DDD.Infra.SQLServer.Repositories
             }
         }
 
-        public Cliente GetClienteById(int id)
+        public TipoDeCrime GetTipoDeCrimeById(int id)
         {
-            return _context.Cliente.Find(id);
+            return _context.TipoDeCrime.Find(id);
         }
 
-        public List<Cliente> GetCliente()
+        public List<TipoDeCrime> GetTipoDeCrime()
         {
             //return  _context.Alunos.Include(x => x.Disciplinas).ToList();
-            return _context.Cliente.ToList();
+            return _context.TipoDeCrime.ToList();
 
         }
 
-        public void InsertCliente(Cliente cliente)
+        public void InsertTipoDeCrime(TipoDeCrime tipoDeCrime)
         {
             try
             {
-                _context.Cliente.Add(cliente);
+                _context.TipoDeCrime.Add(tipoDeCrime);
                 _context.SaveChanges();
             }
             catch (Exception ex)
             {
-                //log exception
+                throw ex;
 
             }
         }
 
 
-        public void UpdateCliente(Cliente cliente)
+        public void UpdateTipoDeCrime(TipoDeCrime tipoDeCrime)
         {
             try
             {
-                _context.Entry(cliente).State = EntityState.Modified;
+                _context.Entry(tipoDeCrime).State = EntityState.Modified;
                 _context.SaveChanges();
 
             }
@@ -74,6 +75,6 @@ namespace DDD.Infra.SQLServer.Repositories
                 throw ex;
             }
         }
-
+       
     }
 }
