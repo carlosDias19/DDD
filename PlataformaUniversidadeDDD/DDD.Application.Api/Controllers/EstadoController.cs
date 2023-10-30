@@ -1,6 +1,7 @@
 
 using DDD.Domain.ReportRadarContext;
 using DDD.Infra.SQLServer.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,12 +19,14 @@ namespace DDD.Application.Api.Controllers
         }
 
         // GET: api/<AlunosController>
+        [Authorize]
         [HttpGet]
         public ActionResult<List<Estado>> Get()
         {
             return Ok(_EstadoRepository.GetEstado());
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public ActionResult<Estado> GetById(int id)
         {
