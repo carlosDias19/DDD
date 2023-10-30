@@ -6,13 +6,29 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DDD.Infra.SQLServer.Migrations
 {
     /// <inheritdoc />
-    public partial class migrationini : Migration
+    public partial class migration5 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateSequence(
                 name: "UserSequence");
+
+            migrationBuilder.CreateTable(
+                name: "Estado",
+                columns: table => new
+                {
+                    EstadoId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NomeEstado = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SiglaEstado = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Latitude = table.Column<decimal>(type: "decimal(18,7)", nullable: true),
+                    Longitude = table.Column<decimal>(type: "decimal(18,7)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Estado", x => x.EstadoId);
+                });
 
             migrationBuilder.CreateTable(
                 name: "TipoDeCrime",
@@ -49,6 +65,9 @@ namespace DDD.Infra.SQLServer.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Estado");
+
             migrationBuilder.DropTable(
                 name: "TipoDeCrime");
 

@@ -24,6 +24,97 @@ namespace DDD.Infra.SQLServer.Migrations
 
             modelBuilder.HasSequence("UserSequence");
 
+            modelBuilder.Entity("DDD.Domain.ReportRadarContext.Cidade", b =>
+                {
+                    b.Property<int>("CidadeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CidadeId"));
+
+                    b.Property<int>("EstadoId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal?>("Latitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<decimal?>("Longitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<string>("NomeCidade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CidadeId");
+
+                    b.ToTable("Cidade");
+                });
+
+            modelBuilder.Entity("DDD.Domain.ReportRadarContext.Denuncias", b =>
+                {
+                    b.Property<int>("DenunciasId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DenunciasId"));
+
+                    b.Property<string>("Bairro")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CEP")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Complemento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Endereco")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Latitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<decimal?>("Longitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<int>("Numero")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("DenunciasId");
+
+                    b.ToTable("Denuncias");
+                });
+
+            modelBuilder.Entity("DDD.Domain.ReportRadarContext.Estado", b =>
+                {
+                    b.Property<int>("EstadoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EstadoId"));
+
+                    b.Property<decimal?>("Latitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<decimal?>("Longitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<string>("NomeEstado")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SiglaEstado")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EstadoId");
+
+                    b.ToTable("Estado");
+                });
+
             modelBuilder.Entity("DDD.Domain.ReportRadarContext.TipoDeCrime", b =>
                 {
                     b.Property<int>("TipoId")

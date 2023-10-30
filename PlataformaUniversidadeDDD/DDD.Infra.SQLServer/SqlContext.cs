@@ -33,5 +33,8 @@ namespace DDD.Infra.SQLServer
 
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<TipoDeCrime> TipoDeCrime { get; set; }
+        public DbSet<Estado> Estado { get; set; }
+        public DbSet<Cidade> Cidade { get; set; }
+        public DbSet<Denuncias> Denuncias { get; set; }
     }
 }

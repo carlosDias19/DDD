@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5qjmzPvFZXL8xSHoGOtY8VIlBomQ+DGbwh71Uacye3Hqu2Z6hFEU7+LTpM1KrpuNglshI3hOYEJRD4lli5NRbA==",
+  "dgSpecHash": "la8Us8OOnwcA0/cTFkEci0Gz/h9+yYNbXCkNBlK2yLjDSAogL4fmDTHnG9A91MV3SQaPDwfWaGSuxriajWaAHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carlo\\OneDrive\\Área de Trabalho\\reportRadarBack\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
+  "projectFilePath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

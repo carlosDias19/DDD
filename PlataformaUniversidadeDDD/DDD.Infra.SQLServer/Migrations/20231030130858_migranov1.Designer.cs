@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DDD.Infra.SQLServer.Migrations
 {
     [DbContext(typeof(SqlContext))]
-    [Migration("20231027011646_migrationini")]
-    partial class migrationini
+    [Migration("20231030130858_migranov1")]
+    partial class migranov1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,6 +26,56 @@ namespace DDD.Infra.SQLServer.Migrations
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.HasSequence("UserSequence");
+
+            modelBuilder.Entity("DDD.Domain.ReportRadarContext.Cidade", b =>
+                {
+                    b.Property<int>("CidadeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CidadeId"));
+
+                    b.Property<int>("EstadoId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal?>("Latitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<decimal?>("Longitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<string>("NomeCidade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CidadeId");
+
+                    b.ToTable("Cidade");
+                });
+
+            modelBuilder.Entity("DDD.Domain.ReportRadarContext.Estado", b =>
+                {
+                    b.Property<int>("EstadoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EstadoId"));
+
+                    b.Property<decimal?>("Latitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<decimal?>("Longitude")
+                        .HasColumnType("decimal(18,7)");
+
+                    b.Property<string>("NomeEstado")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SiglaEstado")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EstadoId");
+
+                    b.ToTable("Estado");
+                });
 
             modelBuilder.Entity("DDD.Domain.ReportRadarContext.TipoDeCrime", b =>
                 {
