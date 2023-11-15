@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {}
+    "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
+    "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
-        "projectName": "DDD.Domain",
-        "projectPath": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj",
-        "packagesPath": "C:\\Users\\Aula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
+        "projectUniqueName": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {
+    "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
+        "projectUniqueName": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
         "projectName": "DDD.Infra.SQLServer",
-        "projectPath": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
-        "packagesPath": "C:\\Users\\Aula\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\obj\\",
+        "projectPath": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
+        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,8 +105,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
-                "projectPath": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj"
+              "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj"
               }
             }
           }
@@ -174,7 +174,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

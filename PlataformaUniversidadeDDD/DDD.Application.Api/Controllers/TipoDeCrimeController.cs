@@ -1,4 +1,5 @@
 
+using ApplicationService.Interface;
 using DDD.Domain.ReportRadarContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -10,69 +11,81 @@ namespace DDD.Application.Api.Controllers
     [ApiController]
     public class TipoDeCrimeController : ControllerBase
     {
-        readonly ITipoDeCrimeRepository _tipoDeCrimeRepository;
+        readonly ITipoDeCrimeApplication _tipoDeCrimeRepository;
 
-        public TipoDeCrimeController(ITipoDeCrimeRepository tipoDeCrimeRepository)
+        public TipoDeCrimeController(ITipoDeCrimeApplication tipoDeCrimeRepository)
         {
             _tipoDeCrimeRepository = tipoDeCrimeRepository;
         }
 
-        // GET: api/<AlunosController>
         [HttpGet]
-        public ActionResult<List<TipoDeCrime>> Get()
-        {
-            return Ok(_tipoDeCrimeRepository.GetTipoDeCrime());
-        }
-
-        [HttpGet("{id}")]
-        public ActionResult<TipoDeCrime> GetById(int id)
-        {
-            return Ok(_tipoDeCrimeRepository.GetTipoDeCrimeById(id));
-        }
-
-        [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<TipoDeCrime> CreateTipoDeCrime(TipoDeCrime tipoDeCrime)
-        {
-
-            _tipoDeCrimeRepository.InsertTipoDeCrime(tipoDeCrime);
-            return CreatedAtAction(nameof(GetById), new { id = tipoDeCrime.TipoId }, tipoDeCrime);
-        }
-
-        [HttpPut]
-        public ActionResult Put([FromBody] TipoDeCrime tipoDeCrime)
+        public IActionResult GetTipoDeCrime()
         {
             try
             {
-                _tipoDeCrimeRepository.UpdateTipoDeCrime(tipoDeCrime);
-                return Ok("Tipo De Crime Atualizado com sucesso!");
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-        // DELETE api/values/5
-        [HttpDelete()]
-        public ActionResult Delete([FromBody] TipoDeCrime tipoDeCrime)
-        {
-            try
-            {
-                if (tipoDeCrime == null)
-                    return NotFound("Erro ao Deletar");
-
-                _tipoDeCrimeRepository.DeleteTipoDeCrime(tipoDeCrime);
-                return Ok("Tipo De Crime Removido com sucesso!");
+                var tipoDeCrimes = _tipoDeCrimeRepository.GetTipoDeCrime();
+                return Ok(tipoDeCrimes);
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                return BadRequest(ex.Message);
             }
+        }
 
+        [HttpGet("{id}")]
+        public IActionResult GetTipoDeCrimeById(int id)
+        {
+            try
+            {
+                var tipoDeCrimes = _tipoDeCrimeRepository.GetTipoDeCrimeById(id);
+                return Ok(tipoDeCrimes);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult InsertTipoDeCrime(TipoDeCrime tipoDeCrime)
+        {
+            try
+            {
+                _tipoDeCrimeRepository.InsertTipoDeCrime(tipoDeCrime);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateTipoDeCrime(int id, TipoDeCrime tipoDeCrime)
+        {
+            try
+            {
+                _tipoDeCrimeRepository.UpdateTipoDeCrime(id, tipoDeCrime);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteTipoDeCrime(int id)
+        {
+            try
+            {
+                _tipoDeCrimeRepository.DeleteTipoDeCrime(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
     }

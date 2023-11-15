@@ -104,8 +104,6 @@ C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.S
 C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\bin\Debug\net6.0\DDD.Infra.SQLServer.runtimeconfig.json
 C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\bin\Debug\net6.0\DDD.Infra.SQLServer.dll
 C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\bin\Debug\net6.0\DDD.Infra.SQLServer.pdb
-C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\bin\Debug\net6.0\DDD.Domain.dll
-C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\bin\Debug\net6.0\DDD.Domain.pdb
 C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\obj\Debug\net6.0\DDD.Infra.SQLServer.csproj.AssemblyReference.cache
 C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\obj\Debug\net6.0\DDD.Infra.SQLServer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\obj\Debug\net6.0\DDD.Infra.SQLServer.AssemblyInfoInputs.cache
@@ -134,3 +132,5 @@ C:\Users\Aula\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQ
 C:\Users\Aula\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\obj\Debug\net6.0\DDD.Infra.SQLServer.pdb
 C:\Users\Aula\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\obj\Debug\net6.0\DDD.Infra.SQLServer.genruntimeconfig.cache
 C:\Users\Aula\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\obj\Debug\net6.0\ref\DDD.Infra.SQLServer.dll
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\bin\Debug\net6.0\Domain.dll
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Infra.SQLServer\bin\Debug\net6.0\Domain.pdb

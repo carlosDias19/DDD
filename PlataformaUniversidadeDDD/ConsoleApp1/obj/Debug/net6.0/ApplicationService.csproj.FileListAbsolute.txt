@@ -1,0 +1,5 @@
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.csproj.AssemblyReference.cache
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.AssemblyInfoInputs.cache
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.AssemblyInfo.cs
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.csproj.CoreCompileInputs.cache

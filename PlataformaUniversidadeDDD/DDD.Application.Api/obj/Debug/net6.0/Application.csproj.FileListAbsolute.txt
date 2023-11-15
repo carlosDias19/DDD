@@ -1,0 +1,6 @@
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Application.Api\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Application.Api\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Application.Api\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Application.Api\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Application.Api\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\carlo\source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DDD.Application.Api\obj\Debug\net6.0\Application.MvcApplicationPartsAssemblyInfo.cache

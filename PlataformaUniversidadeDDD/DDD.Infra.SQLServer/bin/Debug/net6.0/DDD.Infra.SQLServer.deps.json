@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "DDD.Infra.SQLServer/1.0.0": {
         "dependencies": {
-          "DDD.Domain": "1.0.0",
+          "Domain": "1.0.0",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.17",
@@ -767,7 +767,7 @@
           }
         }
       },
-      "DDD.Domain/1.0.0": {
+      "Domain/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
@@ -776,7 +776,7 @@
           "System.IdentityModel.Tokens.Jwt": "7.0.3"
         },
         "runtime": {
-          "DDD.Domain.dll": {}
+          "Domain.dll": {}
         }
       }
     }
@@ -1333,7 +1333,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "DDD.Domain/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

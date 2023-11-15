@@ -1,6 +1,10 @@
+using ApplicationService.Application;
+using ApplicationService.Interface;
 using DDD.Infra.SQLServer;
 using DDD.Infra.SQLServer.Interfaces;
 using DDD.Infra.SQLServer.Repositories;
+using DomainService.Interface;
+using DomainService.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -8,6 +12,16 @@ using System.Text;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Autorização para requisição com o CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", builder =>
+        builder.WithOrigins("*")
+               .AllowAnyMethod()
+               .AllowAnyHeader());
+});
+
 
 // Add services to the container.
 
@@ -19,6 +33,13 @@ builder.Services.AddScoped<IEstadoRepository, EstadoRepositorySqlServer>();
 builder.Services.AddScoped<ICidadeRepository, CidadeRepositorySqlServer>();
 builder.Services.AddScoped<IDenunciasRepository, DenunciasRepositorySqlServer>();
 
+//Dependency Injection Application
+builder.Services.AddScoped<ITipoDeCrimeApplication, TipoDeCrimeApplication>();
+
+//Dependency Injection Service
+builder.Services.AddScoped<ITipoDeCrimeService, TipoDeCrimeService>();
+
+////Dependency Injection SqlContext
 builder.Services.AddScoped<SqlContext, SqlContext>();
 
 builder.Services.AddControllers().AddJsonOptions(x =>
@@ -90,6 +111,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowSpecificOrigin");
+
 
 app.UseAuthentication();
 app.UseAuthorization();

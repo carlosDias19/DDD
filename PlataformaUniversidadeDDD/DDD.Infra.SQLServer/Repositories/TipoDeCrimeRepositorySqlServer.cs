@@ -60,7 +60,6 @@ namespace DDD.Infra.SQLServer.Repositories
             }
         }
 
-
         public void UpdateTipoDeCrime(TipoDeCrime tipoDeCrime)
         {
             try
@@ -75,6 +74,5 @@ namespace DDD.Infra.SQLServer.Repositories
                 throw ex;
             }
         }
-       
     }
 }

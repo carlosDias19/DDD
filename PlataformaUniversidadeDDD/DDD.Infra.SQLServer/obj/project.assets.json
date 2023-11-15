@@ -1408,7 +1408,7 @@
           }
         }
       },
-      "DDD.Domain/1.0.0": {
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1419,10 +1419,10 @@
           "System.IdentityModel.Tokens.Jwt": "7.0.3"
         },
         "compile": {
-          "bin/placeholder/DDD.Domain.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DDD.Domain.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -3371,15 +3371,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "DDD.Domain/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../DDD.Domain/DDD.Domain.csproj",
-      "msbuildProject": "../DDD.Domain/DDD.Domain.csproj"
+      "path": "../DDD.Domain/Domain.csproj",
+      "msbuildProject": "../DDD.Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DDD.Domain >= 1.0.0",
+      "Domain >= 1.0.0",
       "Microsoft.AspNetCore.Authentication >= 2.2.0",
       "Microsoft.AspNetCore.Authentication.Core >= 2.2.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.17",
@@ -3391,19 +3391,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aula\\.nuget\\packages\\": {}
+    "C:\\Users\\carlo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
+      "projectUniqueName": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
       "projectName": "DDD.Infra.SQLServer",
-      "projectPath": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
-      "packagesPath": "C:\\Users\\Aula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\obj\\",
+      "projectPath": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
+      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aula\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3417,8 +3417,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj": {
-              "projectPath": "C:\\Users\\Aula\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\DDD.Domain.csproj"
+            "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\carlo\\source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj"
             }
           }
         }
@@ -3486,7 +3486,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
