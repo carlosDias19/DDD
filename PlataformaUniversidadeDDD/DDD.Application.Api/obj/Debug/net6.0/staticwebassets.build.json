@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "SFgNwn9y3AODtZ97i12CDzvOXTTz/4ya+7Xzh/I08NQ=",
-  "Source": "DDD.Application.Api",
-  "BasePath": "_content/DDD.Application.Api",
+  "Hash": "Ee4K7z+QMe0erAzf/Epl3d7uS+cp6yJzWSmXR2jB4Cs=",
+  "Source": "Application",
+  "BasePath": "_content/Application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
