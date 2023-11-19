@@ -36,8 +36,15 @@ builder.Services.AddScoped<IDenunciasRepository, DenunciasRepositorySqlServer>()
 //Dependency Injection Application
 builder.Services.AddScoped<ITipoDeCrimeApplication, TipoDeCrimeApplication>();
 
+
 //Dependency Injection Service
 builder.Services.AddScoped<ITipoDeCrimeService, TipoDeCrimeService>();
+builder.Services.AddScoped<ICidadeService, CidadeService>();
+builder.Services.AddScoped<IDenunciaService, DenunciaService>();
+builder.Services.AddScoped<IEstadoService, EstadoService>();
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+
+
 
 ////Dependency Injection SqlContext
 builder.Services.AddScoped<SqlContext, SqlContext>();
