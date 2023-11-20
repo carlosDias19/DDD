@@ -32,14 +32,16 @@ namespace ApplicationService.Application
             _DenunciaService.InsertDenuncia(denuncia);
         }
 
-        public void UpdateDenuncia(int id, Denuncias denuncia)
+        public void UpdateDenuncia(Denuncias denuncia)
         {
-            _DenunciaService.UpdateDenuncia(id, denuncia);
+            _DenunciaService.UpdateDenuncia(denuncia);
         }
 
         public void DeleteDenuncia(int id)
         {
             _DenunciaService.DeleteDenuncia(id);
         }
+
+        
     }
 }

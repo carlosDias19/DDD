@@ -13,6 +13,6 @@ namespace ApplicationService.Interface
         List<Usuario> GetUsuario();
         Usuario GetUsuarioById(int id);
         void InsertUsuario(Usuario usuario);
-        void UpdateUsuario(int id, Usuario usuario);
+        void UpdateUsuario(Usuario usuario);
     }
 }

@@ -32,9 +32,9 @@ namespace ApplicationService.Application
             _tipoDeCrimeService.InsertTipoDeCrime(tipoDeCrime);
         }
 
-        public void UpdateTipoDeCrime(int id, TipoDeCrime tipoDeCrime)
+        public void UpdateTipoDeCrime(TipoDeCrime tipoDeCrime)
         {
-            _tipoDeCrimeService.UpdateTipoDeCrime(id, tipoDeCrime);
+            _tipoDeCrimeService.UpdateTipoDeCrime(tipoDeCrime);
         }
 
         public void DeleteTipoDeCrime(int id)

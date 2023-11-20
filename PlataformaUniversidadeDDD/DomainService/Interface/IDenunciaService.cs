@@ -13,7 +13,7 @@ namespace DomainService.Interface
         List<Denuncias> GetDenuncia();
         Denuncias GetDenunciaById(int id);
         void InsertDenuncia(Denuncias denuncia);
-        void UpdateDenuncia(int id, Denuncias denuncia);
+        void UpdateDenuncia(Denuncias denuncia);
 
     }
 }

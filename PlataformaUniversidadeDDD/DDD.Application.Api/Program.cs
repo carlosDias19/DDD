@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using System.Text.Json.Serialization;
+//using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,9 +32,15 @@ builder.Services.AddScoped<ITipoDeCrimeRepository, TipoDeCrimeRepositorySqlServe
 builder.Services.AddScoped<IEstadoRepository, EstadoRepositorySqlServer>();
 builder.Services.AddScoped<ICidadeRepository, CidadeRepositorySqlServer>();
 builder.Services.AddScoped<IDenunciasRepository, DenunciasRepositorySqlServer>();
+builder.Services.AddScoped<IDenunciasConfirmRepository, DenunciasConfirmRepositorySqlServer>();
 
 //Dependency Injection Application
 builder.Services.AddScoped<ITipoDeCrimeApplication, TipoDeCrimeApplication>();
+builder.Services.AddScoped<ICidadeApplication, CidadeApplication>();
+builder.Services.AddScoped<IEstadoApplication, EstadoApplication>();
+builder.Services.AddScoped<IDenunciaApplication, DenunciaApplication>();
+builder.Services.AddScoped<IUsuarioApplication, UsuarioApplication>();
+builder.Services.AddScoped<IDenunciaConfirmApplication, DenunciaConfirmApplication>();
 
 
 //Dependency Injection Service
@@ -43,14 +49,15 @@ builder.Services.AddScoped<ICidadeService, CidadeService>();
 builder.Services.AddScoped<IDenunciaService, DenunciaService>();
 builder.Services.AddScoped<IEstadoService, EstadoService>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<IDenunciaConfirmService, DenunciaConfirmService>();
 
 
 
 ////Dependency Injection SqlContext
 builder.Services.AddScoped<SqlContext, SqlContext>();
 
-builder.Services.AddControllers().AddJsonOptions(x =>
-   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+//builder.Services.AddControllers().AddJsonOptions(x =>
+//   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

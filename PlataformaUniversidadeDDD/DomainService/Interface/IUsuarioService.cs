@@ -13,7 +13,7 @@ namespace DomainService.Interface
         Usuario GetUsuarioById(int id);
         List<Usuario> GetUsuario();
         void InsertUsuario(Usuario usuario);
-        void UpdateUsuario(int id, Usuario usuario);
+        void UpdateUsuario(Usuario usuario);
 
     }
 }

@@ -60,12 +60,12 @@ namespace DDD.Application.Api.Controllers
             }
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateTipoDeCrime(int id, TipoDeCrime tipoDeCrime)
+        [HttpPut]
+        public IActionResult UpdateTipoDeCrime(TipoDeCrime tipoDeCrime)
         {
             try
             {
-                _tipoDeCrimeRepository.UpdateTipoDeCrime(id, tipoDeCrime);
+                _tipoDeCrimeRepository.UpdateTipoDeCrime(tipoDeCrime);
                 return Ok();
             }
             catch (Exception ex)
@@ -74,12 +74,12 @@ namespace DDD.Application.Api.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult DeleteTipoDeCrime(int id)
+        [HttpDelete("{TipoId}")]
+        public IActionResult DeleteTipoDeCrime(int TipoId)
         {
             try
             {
-                _tipoDeCrimeRepository.DeleteTipoDeCrime(id);
+                _tipoDeCrimeRepository.DeleteTipoDeCrime(TipoId);
                 return Ok();
             }
             catch (Exception ex)

@@ -34,12 +34,8 @@ namespace DomainService.Service
             _denunciaRepository.InsertDenuncias(denuncia);
             }
 
-            public void UpdateDenuncia(int id, Denuncias denuncia)
+            public void UpdateDenuncia(Denuncias denuncia)
             {
-                var denunciaVer = _denunciaRepository.GetDenunciasById(id);
-                if (denunciaVer == null)
-                    throw new Exception("Essa denuncia Não Existe.");
-
                 _denunciaRepository.UpdateDenuncias(denuncia);
             }
 
@@ -52,5 +48,6 @@ namespace DomainService.Service
 
                 _denunciaRepository.DeleteDenuncias(denuncia);
             }
+
     }
 }

@@ -1,4 +1,5 @@
 
+using ApplicationService.Interface;
 using DDD.Domain.ReportRadarContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -10,69 +11,81 @@ namespace DDD.Application.Api.Controllers
     [ApiController]
     public class DenunciasController : ControllerBase
     {
-        readonly IDenunciasRepository _denunciasRepository;
+        readonly IDenunciaApplication _denunciasRepository;
 
-        public DenunciasController(IDenunciasRepository denunciasRepository)
+        public DenunciasController(IDenunciaApplication denunciasRepository)
         {
             _denunciasRepository = denunciasRepository;
         }
 
-        // GET: api/<AlunosController>
         [HttpGet]
-        public ActionResult<List<Denuncias>> Get()
-        {
-            return Ok(_denunciasRepository.GetDenuncias());
-        }
-
-        [HttpGet("{id}")]
-        public ActionResult<Denuncias> GetById(int id)
-        {
-            return Ok(_denunciasRepository.GetDenunciasById(id));
-        }
-
-        [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Denuncias> CreateTipoDeCrime(Denuncias denuncias)
-        {
-
-            _denunciasRepository.InsertDenuncias(denuncias);
-            return CreatedAtAction(nameof(GetById), new { id = denuncias.DenunciasId }, denuncias);
-        }
-
-        [HttpPut]
-        public ActionResult Put([FromBody] Denuncias denuncias)
+        public IActionResult GetDenuncias()
         {
             try
             {
-                _denunciasRepository.UpdateDenuncias(denuncias);
-                return Ok("Denuncias Atualizado com sucesso!");
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-        // DELETE api/values/5
-        [HttpDelete()]
-        public ActionResult Delete([FromBody] Denuncias denuncias)
-        {
-            try
-            {
-                if (denuncias == null)
-                    return NotFound("Erro ao Deletar");
-
-                _denunciasRepository.DeleteDenuncias(denuncias);
-                return Ok("Denuncias Removido com sucesso!");
+                var denuncias = _denunciasRepository.GetDenuncia();
+                return Ok(denuncias);
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                return BadRequest(ex.Message);
             }
+        }
 
+        [HttpGet("{id}")]
+        public IActionResult GetDenunciasById(int id)
+        {
+            try
+            {
+                var denuncias = _denunciasRepository.GetDenunciaById(id);
+                return Ok(denuncias);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult InsertDenuncias(Denuncias denuncias)
+        {
+            try
+            {
+                _denunciasRepository.InsertDenuncia(denuncias);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut]
+        public IActionResult UpdateDenuncias(Denuncias denuncias)
+        {
+            try
+            {
+                _denunciasRepository.UpdateDenuncia(denuncias);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteDenuncias(int id)
+        {
+            try
+            {
+                _denunciasRepository.DeleteDenuncia(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
     }

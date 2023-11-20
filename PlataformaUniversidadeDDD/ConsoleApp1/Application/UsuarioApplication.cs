@@ -32,9 +32,9 @@ namespace ApplicationService.Application
             _usuarioService.InsertUsuario(usuario);
         }
 
-        public void UpdateUsuario(int id, Usuario usuario)
+        public void UpdateUsuario(Usuario usuario)
         {
-            _usuarioService.UpdateUsuario(id, usuario);
+            _usuarioService.UpdateUsuario(usuario);
         }
 
         public void DeleteUsuario(int id)

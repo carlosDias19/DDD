@@ -3391,24 +3391,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Karina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AtividadesFaculdade\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
+      "projectUniqueName": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
       "projectName": "DDD.Infra.SQLServer",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\AtividadesFaculdade\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\AtividadesFaculdade\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\obj\\",
+      "projectPath": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj",
+      "packagesPath": "C:\\Users\\Karina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Karina\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3422,8 +3417,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Desktop\\AtividadesFaculdade\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Desktop\\AtividadesFaculdade\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj"
+            "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj"
             }
           }
         }
@@ -3486,26 +3481,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.311\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -9,10 +9,10 @@ namespace ApplicationService.Interface
 {
     public interface ITipoDeCrimeApplication
     {
-        void DeleteTipoDeCrime(int id);
+        void DeleteTipoDeCrime(int TipoID);
         List<TipoDeCrime> GetTipoDeCrime();
         TipoDeCrime GetTipoDeCrimeById(int id);
         void InsertTipoDeCrime(TipoDeCrime tipoDeCrime);
-        void UpdateTipoDeCrime(int id, TipoDeCrime tipoDeCrime);
+        void UpdateTipoDeCrime(TipoDeCrime tipoDeCrime);
     }
 }

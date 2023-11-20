@@ -34,12 +34,8 @@ namespace DomainService.Service
             _tipoDeCrimeRepository.InsertTipoDeCrime(tipoDeCrime);
             }
 
-            public void UpdateTipoDeCrime(int id, TipoDeCrime tipoDeCrime)
+            public void UpdateTipoDeCrime(TipoDeCrime tipoDeCrime)
             {
-                var tipoDeCrimeVer = _tipoDeCrimeRepository.GetTipoDeCrimeById(id);
-                if (tipoDeCrimeVer == null)
-                    throw new Exception("Tipo De Crime Não Existe.");
-
                 _tipoDeCrimeRepository.UpdateTipoDeCrime(tipoDeCrime);
             }
 

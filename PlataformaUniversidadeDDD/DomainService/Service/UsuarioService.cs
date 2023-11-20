@@ -34,12 +34,8 @@ namespace DomainService.Service
             _usuarioRepository.InsertUsuario(usuario);
             }
 
-            public void UpdateUsuario(int id, Usuario usuario)
+            public void UpdateUsuario(Usuario usuario)
             {
-                var UsuarioVer = _usuarioRepository.GetUsuarioById(id);
-                if (UsuarioVer == null)
-                    throw new Exception("Esse Usuario Não Existe.");
-
                 _usuarioRepository.UpdateUsuario(usuario);
             }
 

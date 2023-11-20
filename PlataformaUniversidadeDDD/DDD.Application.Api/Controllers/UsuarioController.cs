@@ -1,4 +1,5 @@
 
+using ApplicationService.Interface;
 using DDD.Domain.ReportRadarContext;
 using DDD.Infra.SQLServer.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -10,9 +11,9 @@ namespace DDD.Application.Api.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
-        readonly IUsuarioRepository _usuarioRepository;
+        readonly IUsuarioApplication _usuarioRepository;
 
-        public UsuarioController(IUsuarioRepository usuarioRepository)
+        public UsuarioController(IUsuarioApplication usuarioRepository)
         {
             _usuarioRepository = usuarioRepository;
         }
@@ -55,24 +56,18 @@ namespace DDD.Application.Api.Controllers
             }
         }
 
-        // DELETE api/values/5
-        [HttpDelete()]
-        public ActionResult Delete([FromBody] Usuario usuario)
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
         {
             try
             {
-                if (usuario == null)
-                    return NotFound("Erro ao Deletar");
-
-                _usuarioRepository.DeleteUsuario(usuario);
+                _usuarioRepository.DeleteUsuario(id);
                 return Ok("Usuario Removido com sucesso!");
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                return BadRequest(ex.Message);
             }
-
         }
 
     }
