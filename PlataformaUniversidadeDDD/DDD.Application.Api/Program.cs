@@ -16,7 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
 //Autorização para requisição com o CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin", builder =>
+    options.AddPolicy("AllowSpecificOrigin", builder => 
         builder.WithOrigins("*")
                .AllowAnyMethod()
                .AllowAnyHeader());
