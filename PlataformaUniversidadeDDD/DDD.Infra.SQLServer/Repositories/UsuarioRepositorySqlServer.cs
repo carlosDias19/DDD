@@ -90,5 +90,10 @@ namespace DDD.Infra.SQLServer.Repositories
 
             }
         }
+
+        public Usuario? GetUsuarioByEmail(string email)
+        {
+            return _context.Usuario.Where(x => x.Email == email).FirstOrDefault();
+        }
     }
 }

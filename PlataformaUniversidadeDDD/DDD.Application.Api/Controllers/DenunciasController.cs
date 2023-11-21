@@ -2,12 +2,14 @@
 using ApplicationService.Interface;
 using DDD.Domain.ReportRadarContext;
 using DDD.Infra.SQLServer.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DDD.Application.Api.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class DenunciasController : ControllerBase
     {

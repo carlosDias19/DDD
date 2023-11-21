@@ -1,7 +1,10 @@
 
+using ApplicationService.Application;
 using ApplicationService.Interface;
 using DDD.Domain.ReportRadarContext;
 using DDD.Infra.SQLServer.Interfaces;
+using Domain.ReportRadarContext;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -63,6 +66,36 @@ namespace DDD.Application.Api.Controllers
             {
                 _usuarioRepository.DeleteUsuario(id);
                 return Ok("Usuario Removido com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpPost("Login")]
+        public IActionResult Login(LoginViewModel loginViewModel)
+        {
+            try
+            {
+                var token = _usuarioRepository.Login(loginViewModel);
+                return Ok(token);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpGet("Email")]
+        public IActionResult GetUsuarioByEmail(string email)
+        {
+            try
+            {
+                var usuario = _usuarioRepository.GetUsuarioByEmail(email);
+                return Ok(usuario);
             }
             catch (Exception ex)
             {

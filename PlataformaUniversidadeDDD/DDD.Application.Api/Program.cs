@@ -22,6 +22,24 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader());
 });
 
+var key = Encoding.ASCII.GetBytes(DDD.Domain.Key.Secret);
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
 
 // Add services to the container.
 
@@ -65,8 +83,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
 
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "AdmMaster API",
+        Version = $"v1",
+        Description = "API para consumo de dados do Front em Vue"
+    });
+
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
+        Description = @"Autenticação por token JWT. Entre com o valor no formato: Bearer SEU_TOKEN",
         Name = "Authorization",
         In = ParameterLocation.Header,
         Type = SecuritySchemeType.ApiKey,
@@ -75,62 +101,46 @@ builder.Services.AddSwaggerGen(c =>
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement()
     {
-    {
-        new OpenApiSecurityScheme
         {
-        Reference = new OpenApiReference
+            new OpenApiSecurityScheme
             {
-            Type = ReferenceType.SecurityScheme,
-            Id = "Bearer"
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                },
+                Scheme = "oauth2",
+                Name = "Bearer",
+                In = ParameterLocation.Header,
             },
-            Scheme = "oauth2",
-            Name = "Bearer",
-            In = ParameterLocation.Header,
-
-        },
-        new List<string>()
+            new List<string>()
         }
     });
+
 }
 );
-
-var key = Encoding.ASCII.GetBytes(DDD.Domain.Key.Secret);
-builder.Services.AddAuthentication(x =>
-{
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(x =>
-{
-    x.RequireHttpsMetadata = false;
-    x.SaveToken = true;
-    x.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidateIssuer = false,
-        ValidateAudience = false
-    };
-});
-
-
 
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.UseHttpsRedirection();
-app.UseCors("AllowSpecificOrigin");
 
+////Autorização para requisição CORs
+//app.UseCors("corsapp");
+//app.UseAuthorization();
+
+//app.UseAuthentication();
+//app.UseAuthorization();
+app.UseCors("AllowSpecificOrigin");
 
 app.UseAuthentication();
 app.UseAuthorization();
-
 
 app.MapControllers();
 

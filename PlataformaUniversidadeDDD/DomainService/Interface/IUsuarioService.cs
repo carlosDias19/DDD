@@ -1,4 +1,5 @@
 ﻿using DDD.Domain.ReportRadarContext;
+using Domain.ReportRadarContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,7 @@ namespace DomainService.Interface
         void InsertUsuario(Usuario usuario);
         void UpdateUsuario(Usuario usuario);
 
+        string Login(LoginViewModel loginViewModel);
+        Usuario GetUsuarioByEmail(string email);
     }
 }

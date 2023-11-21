@@ -1,6 +1,7 @@
 ﻿using ApplicationService.Interface;
 using DDD.Domain.ReportRadarContext;
 using DomainService.Interface;
+using Domain.ReportRadarContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,5 +42,14 @@ namespace ApplicationService.Application
         {
             _usuarioService.DeleteUsuario(id);
         }
+        public string Login(LoginViewModel loginViewModel)
+        {
+            return _usuarioService.Login(loginViewModel);
+        }
+        public Usuario GetUsuarioByEmail(string email)
+        {
+            return _usuarioService.GetUsuarioByEmail(email);
+        }
+
     }
 }

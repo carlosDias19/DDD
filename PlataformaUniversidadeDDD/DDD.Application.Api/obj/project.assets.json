@@ -3840,19 +3840,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Karina\\.nuget\\packages\\": {}
+    "C:\\Users\\carlo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Application.Api\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Application.Api\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Application.Api\\Application.csproj",
-      "packagesPath": "C:\\Users\\Karina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Application.Api\\obj\\",
+      "projectPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Application.Api\\Application.csproj",
+      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Application.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Karina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3866,11 +3866,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\ConsoleApp1\\ApplicationService.csproj": {
-              "projectPath": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\ConsoleApp1\\ApplicationService.csproj"
+            "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\ConsoleApp1\\ApplicationService.csproj": {
+              "projectPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\ConsoleApp1\\ApplicationService.csproj"
             },
-            "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {
-              "projectPath": "C:\\Users\\Karina\\Desktop\\ReportRadar-BackEnd\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj"
+            "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj": {
+              "projectPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Infra.SQLServer\\DDD.Infra.SQLServer.csproj"
             }
           }
         }

@@ -37,3 +37,15 @@ C:\Users\Karina\Desktop\ReportRadar-BackEnd\PlataformaUniversidadeDDD\DomainServ
 C:\Users\Karina\Desktop\ReportRadar-BackEnd\PlataformaUniversidadeDDD\DomainService\obj\Debug\net6.0\refint\DomainService.dll
 C:\Users\Karina\Desktop\ReportRadar-BackEnd\PlataformaUniversidadeDDD\DomainService\obj\Debug\net6.0\DomainService.pdb
 C:\Users\Karina\Desktop\ReportRadar-BackEnd\PlataformaUniversidadeDDD\DomainService\obj\Debug\net6.0\ref\DomainService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\bin\Debug\net6.0\DomainService.deps.json
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\bin\Debug\net6.0\DomainService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\bin\Debug\net6.0\DomainService.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\bin\Debug\net6.0\DDD.Infra.SQLServer.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\bin\Debug\net6.0\Domain.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\bin\Debug\net6.0\Domain.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\bin\Debug\net6.0\DDD.Infra.SQLServer.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\obj\Debug\net6.0\DomainService.csproj.CopyComplete
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\obj\Debug\net6.0\DomainService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\obj\Debug\net6.0\refint\DomainService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\obj\Debug\net6.0\DomainService.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\DomainService\obj\Debug\net6.0\ref\DomainService.dll

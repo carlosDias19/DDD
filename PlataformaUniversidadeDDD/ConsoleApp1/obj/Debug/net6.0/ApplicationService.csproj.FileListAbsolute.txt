@@ -41,3 +41,17 @@ C:\Users\Karina\Desktop\ReportRadar-BackEnd\PlataformaUniversidadeDDD\ConsoleApp
 C:\Users\Karina\Desktop\ReportRadar-BackEnd\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\refint\ApplicationService.dll
 C:\Users\Karina\Desktop\ReportRadar-BackEnd\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.pdb
 C:\Users\Karina\Desktop\ReportRadar-BackEnd\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ref\ApplicationService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\ApplicationService.deps.json
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\ApplicationService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\ApplicationService.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\DDD.Infra.SQLServer.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\Domain.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\DomainService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\DomainService.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\DDD.Infra.SQLServer.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\bin\Debug\net6.0\Domain.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.csproj.CopyComplete
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\refint\ApplicationService.dll
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ApplicationService.pdb
+C:\Users\carlo\Source\Repos\DDDReportRadar\PlataformaUniversidadeDDD\ConsoleApp1\obj\Debug\net6.0\ref\ApplicationService.dll

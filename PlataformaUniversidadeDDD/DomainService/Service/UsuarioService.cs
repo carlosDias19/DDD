@@ -1,5 +1,7 @@
 ﻿using DDD.Domain.ReportRadarContext;
+using DDD.Domain.Services;
 using DDD.Infra.SQLServer.Interfaces;
+using Domain.ReportRadarContext;
 using DomainService.Interface;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -49,6 +51,20 @@ namespace DomainService.Service
                 _usuarioRepository.DeleteUsuario(usuario);
             }
 
-       
+            public string Login(LoginViewModel loginViewModel)
+            {
+                var usuario = _usuarioRepository.GetUsuarioByEmail(loginViewModel.email);
+                if (usuario == null) throw new Exception("Usuario inexistente.");
+
+                if (usuario.Senha != loginViewModel.senha) throw new Exception("Senha errada.");
+
+                var token = TokenService.GenerateToken(usuario);
+
+                return token;
+            }
+            public Usuario GetUsuarioByEmail(string email)
+            {
+                return _usuarioRepository.GetUsuarioByEmail(email);
+            }
     }
 }
