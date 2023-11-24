@@ -30,8 +30,8 @@ Antes de começar a trabalhar no projeto, certifique-se de ter as seguintes ferr
    ```bash
    Abra o visual studio, e clique em **Clonar Repositorio** - coloque, https://github.com/carlosDias19/DDDReportRadar.git
    - Vá em ferramentas, GERENCIADOR DE PACOTE NUGET, e abra o console. No console altere o projeto padrão para DDD.Infra.SQLserver, e digite 'update-database'
+   - Testes
+    Para testar, pode-se utilizar do swager (padrão de inicialização), ou testar com as requisições do front
+    USUARIO ADM: Carlos@teste.com
+    SENHA: 123
 
-- Testes
-  Para testar, pode-se utilizar do swager (padrão de inicialização), ou testar com as requisições do front
-  USUARIO ADM: Carlos@teste.com
-  SENHA: 123
