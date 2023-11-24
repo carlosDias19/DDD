@@ -3156,19 +3156,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlo\\.nuget\\packages\\": {}
+    "C:\\Users\\ti.estagiario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\ConsoleApp1\\ApplicationService.csproj",
+      "projectUniqueName": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadarteste\\PlataformaUniversidadeDDD\\ConsoleApp1\\ApplicationService.csproj",
       "projectName": "ApplicationService",
-      "projectPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\ConsoleApp1\\ApplicationService.csproj",
-      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadarteste\\PlataformaUniversidadeDDD\\ConsoleApp1\\ApplicationService.csproj",
+      "packagesPath": "C:\\Users\\ti.estagiario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadarteste\\PlataformaUniversidadeDDD\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ti.estagiario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3182,8 +3182,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DomainService\\DomainService.csproj": {
-              "projectPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DomainService\\DomainService.csproj"
+            "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadarteste\\PlataformaUniversidadeDDD\\DomainService\\DomainService.csproj": {
+              "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadarteste\\PlataformaUniversidadeDDD\\DomainService\\DomainService.csproj"
             }
           }
         }

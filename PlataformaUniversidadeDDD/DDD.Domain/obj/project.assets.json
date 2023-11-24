@@ -1667,19 +1667,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carlo\\.nuget\\packages\\": {}
+    "C:\\Users\\ti.estagiario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadarteste\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carlo\\Source\\Repos\\DDDReportRadar\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
+      "projectPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadarteste\\PlataformaUniversidadeDDD\\DDD.Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\ti.estagiario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ti.estagiario\\Source\\Repos\\DDDReportRadarteste\\PlataformaUniversidadeDDD\\DDD.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ti.estagiario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
